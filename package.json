@@ -71,14 +71,14 @@
     "sinon-chai": "^2.13.0",
     "style-loader": "^0.18.2",
     "uglifyjs-webpack-plugin": "^0.4.6",
-    "vue": "^2.2.0",
+    "vue": "^2.5.0",
     "vue-loader": "^13.0.4",
     "vue-template-compiler": "^2.4.2",
     "webpack": "^3.5.4",
     "webpack-dev-server": "^2.7.1"
   },
   "peerDependencies": {
-    "vue": "^2.2.0"
+    "vue": "^2.5.0"
   },
   "license": "MIT",
   "pre-commit": [
