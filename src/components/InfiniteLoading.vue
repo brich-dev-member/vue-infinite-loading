@@ -121,7 +121,11 @@
           if (ev && ev.constructor === Event) {
             if (!this.inThrottle) {
               this.inThrottle = true;
-              setTimeout(() => { this.inThrottle = false; }, this.throttleLimit);
+              if (this.throttleLimit > 0) {
+                setTimeout(() => { this.inThrottle = false; }, this.throttleLimit);
+              } else {
+                this.inThrottle = false;
+              }
               this.attemptLoad();
             }
           } else {
